@@ -1,0 +1,40 @@
+/* Parent div */
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 10vh;
+}
+.nav-name{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.nav-right{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+}
+.nav-button{
+    flex: 2;
+
+}
+.nav-right>.nav-list>li:hover{
+    color: var(--orange);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.2s;
+}
