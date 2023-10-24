@@ -1,0 +1,116 @@
+.testinomial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+    height: 127vh;
+    position: relative;
+    gap: 2rem;
+}
+
+.testimonialHeading {
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.teamDesc {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.memebers {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 19rem;
+    padding: 10px;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid rgb(145, 228, 255);
+    box-shadow: var(--boxshadow);
+    border-radius: 20px;
+}
+
+.imgProfile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -32px;
+}
+
+.imgProfile>img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    border: 4px solid rgb(145, 228, 255);
+    object-fit: cover;
+}
+
+.writtenContent {
+    position: relative;
+    top: -30px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.memebers>span {
+    color: var(--gray);
+}
+
+.testinomial .swiper {
+    width: 100%;
+    height: 70%;
+
+}
+
+.testinomial .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.testinomial .memberCourses {
+    color: rgb(145, 228, 255);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.memberName {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 7px;
+}
+
+.testinomial .swiper-pagination-bullet-active {
+    background-color: var(--orange);
+}
+
+.testinomial .swiper-pagination-bullet {
+    background: var(--orange);
+    width: 15px;
+    height: 15px;
+}
+
+@media screen and (max-width:480px) {
+    .memebers {
+        margin-top: 220px;
+        height: 30rem;
+    }
+
+    .testinomial {
+        padding: 26px;
+    }
+
+    .testinomial .swiper-pagination {
+        top: 447px
+    }
+}

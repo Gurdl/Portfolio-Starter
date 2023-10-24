@@ -1,0 +1,232 @@
+.intro-wrapper {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.intro-left {
+    display: flex;
+    position: relative;
+    flex: 0 0 50%;
+    flex-direction: column;
+
+}
+
+.intro-name {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+.intro-name>:nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-style: italic;
+}
+
+.intro-name>:nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3.6rem;
+
+}
+
+.intro-name>:nth-child(3) {
+    margin-top: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    columns: var(--gray);
+
+}
+
+.intro-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 30px;
+}
+
+.textWrapper {
+    display: inline-block;
+    margin: 0px;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 5s steps(25, end) infinite;
+    font-size: 1.4rem;
+    width: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.dynamic-text {
+    margin: 0px;
+    list-style: none;
+    color: var(--orange);
+}
+
+/* Css animations For Name*/
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            var(--black) 0%,
+            var(--orange) 29%,
+            var(--orange) 67%,
+            var(--orange) 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Css for skills */
+.word {
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
+.intro-socaialicons {
+    display: flex;
+    gap: 50px;
+    margin-top: 130px;
+}
+
+.socailIconImage {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.socailIconImage:hover {
+    transform: scale(1.2);
+    /* Zoom in effect */
+    filter: brightness(0.9);
+    text-decoration: underline;
+}
+
+.intro-right {
+    display: flex;
+    flex: 0 0 50%;
+    position: relative;
+}
+
+.intro-right>* {
+    position: absolute;
+    z-index: 1;
+}
+
+.intro-right>:nth-child(1) {
+    transform: scale(0.69)rotate(9deg);
+    left: -15%;
+    top: -9%;
+}
+
+.intro-right>:nth-child(2) {
+    transform: scale(0.67)rotate(24deg);
+    left: -4rem;
+    top: -4.6rem;
+    height: 34rem;
+}
+
+.intro-right>:nth-child(3) {
+    width: 142px;
+    height: 187px;
+    transform: scale(2.7)rotate(4deg);
+    left: 30%;
+    top: 96px;
+    overflow: hidden;
+    box-sizing: 10px 10px 20px black;
+    /* box-shadow: 10px 10px 20px #fbaa21; */
+    padding: 0px;
+    border-radius: 42px;
+    filter: drop-shadow(2px 4px 14px #fbaa21);
+}
+
+.intro-right>:nth-child(4) {
+    transform: scale(0.6);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+
+}
+
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #edd0ff;
+    filter: blur(72px);
+    top: -18%;
+    left: 56%;
+    z-index: -9;
+}
+
+@media screen and (max-width:480px) {
+    .intro-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 64rem;
+        gap: 4rem;
+    }
+
+    .intro-right {
+        transform: scale(0.8);
+        left: -2rem;
+    }
+
+    .intro-right>:nth-child(1) {
+        left: -44%;
+        transition: all 4
+    }
+
+    .intro-right>:nth-child(2) {
+        left: -51%;
+    }
+
+    .intro-right>:nth-child(4) {
+        top: -28% !important;
+
+    }
+
+    .typed-out {
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--orange);
+    }
+    .blur{
+        display: none;
+    }
+
+}

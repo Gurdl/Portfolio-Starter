@@ -38,3 +38,13 @@
     cursor: pointer;
     transition: all 0.2s;
 }
+.link-style {
+    text-decoration: none;
+    color: inherit;
+    /* Add other styles as needed */
+}
+@media screen and (max-width:480px){
+    .nav-list{
+        display: none;
+    }
+}

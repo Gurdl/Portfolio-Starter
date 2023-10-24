@@ -1,0 +1,85 @@
+.services {
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    margin-top: 9rem;
+    margin-bottom: 8rem;
+}
+
+.services-left {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+.services-left>:nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-style: italic;
+}
+
+.services-left>:nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3.6rem;
+
+}
+.services-left>:nth-child(3) {
+    margin-top: 1rem;
+    color: var(--gray);
+}
+.servicesbtns{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 2rem;
+}
+.servicesbtn{
+    width: 10rem;
+    height: 2rem;
+}
+.servicesbtn2{
+    width: 8rem;
+    height: 2rem;
+}
+
+.services-right {
+    flex: 0 0 50%;
+}
+.cards{
+    position: relative;
+}
+.cards>*{
+    position: absolute;
+}
+@media screen and (max-width:480px){
+    .services {
+        flex-direction: column;
+        margin-top: 0;
+        gap: 2rem;
+        height: auto;
+        padding: 0;
+    }
+
+    .services-right {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .services-left{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards {
+        width: 100%;
+        height: 400px;
+    }
+    .blur{
+        display: none;
+    }
+}

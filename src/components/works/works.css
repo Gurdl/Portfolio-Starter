@@ -1,0 +1,136 @@
+.headingText2 {
+    color: #87e6fb;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* .works{
+    display: flex;
+    height: 90vh;
+    margin: 4rem;
+} */
+.works-right {
+    position: relative;
+    flex: 0 0 50%;
+}
+
+.MainCircle {
+    background-color: white;
+    box-shadow: var(--smboxShadow);
+    border-radius: 100%;
+    width: 24rem;
+    height: 24rem;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.MainCircle>* {
+    /* position: absolute; */
+}
+
+.MainCircle>:nth-child(1) {
+    position: absolute;
+    top: 9rem;
+    left: 9rem;
+    transform: scale(2);
+    border: none;
+}
+
+.MainCircle>:nth-child(2) {
+    position: absolute;
+    top: -2.5rem;
+    left: 9rem;
+    filter: drop-shadow(2px 4px 6px skyblue);
+    border: 5px solid skyblue;
+}
+
+.MainCircle>:nth-child(3) {
+    position: absolute;
+    top: 9rem;
+    left: -3rem;
+    border-radius: 100%;
+    filter: drop-shadow(2px 4px 6px lightgreen);
+    border: 5px solid rgb(174, 234, 34);
+
+}
+
+.MainCircle>:nth-child(4) {
+    position: absolute;
+    top: 20rem;
+    left: 9rem;
+    border-radius: 100%;
+    filter: drop-shadow(2px 4px 6px rgb(29, 202, 29));
+    border: 5px solid rgb(38, 111, 38);
+}
+
+.MainCircle>:nth-child(5) {
+    position: absolute;
+    top: 9rem;
+    left: 21rem;
+    border-radius: 100%;
+    filter: drop-shadow(2px 4px 6px rgb(243, 250, 150));
+    border: 5px solid rgb(243, 250, 150);
+}
+
+.works-secondcircle {
+    width: 6rem;
+    height: 6rem;
+    border: 5px solid #ebebeb;
+    border-radius: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.works-secondcircle>img {
+    transform: scale(0.7);
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.bigCircles {
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.blueCircle {
+    background-color: #1949B8;
+    top: 0rem;
+    left: 13rem;
+}
+
+.yellowCircle {
+    background-color: #F5C32c;
+    top: 10rem;
+    left: 15rem;
+}
+
+@media screen and (max-width:480px) {
+    .works {
+        flex-direction: column;
+        height: 70rem;
+        gap: 5rem;
+        padding: 0;
+        margin-bottom: auto;
+
+    }
+
+    .works-right {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        transform: scale(0.55);
+        left: -34px;
+        top: -76px;
+    }
+
+    .MainCircle {
+        position: static;
+    }
+}

@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-
+import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import { ThemeProvider } from './Context';
 ReactDOM.render(
-    <App />,
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>,
   document.getElementById('root')
+
 );
 
 // If you want to start measuring performance in your app, pass a function
