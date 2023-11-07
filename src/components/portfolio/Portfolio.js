@@ -1,9 +1,12 @@
 import React from 'react'
 import "./Portfolio.css"
-import project1Rooms from "../../img/projects/hotel-booking-Rooms.png"
-import project1RoomsMobile from "../../img/projects/roomMobile.png"
-import project1Rooms2 from "../../img/projects//rooms2.png"
-import blogs from "../../img/projects/my-blog.png"
+import project1 from "./images/Project1Image.png"
+import project2 from "./images/Project2Image.png"
+import project3 from "./images/Dall-E.png"
+import project4 from "./images/sql.png"
+import project5 from "./images/apple.png"
+import project6 from "./images/blog.png"
+
 import { Swiper, SwiperSlide } from "swiper/react"
 // Import Swiper styles
 import 'swiper/css';
@@ -40,44 +43,100 @@ export default function Portfolio() {
                     left: '39rem'
                 }}
             ></div>
-            <div className='Allprojects'>
-                <span className='ProjectsHeading' style={{ color: '#08f49296' }}>Hotel Booking App</span>
-                <div className='Projects'>
-                    <div className='projectImages'>
-                        <img src={window.innerWidth < 900 ? project1RoomsMobile : project1Rooms} ></img>
-                    </div>
-                    <div className='ProjectDesc'>
-                        <span style={darkMode ? { color: 'black' } : { color: '' }}>This was the hotel booking app that I made using
-                            <span className='tech' style={{ color: 'var(--gray' }}>: Php,MySQL,Html,javascript,CSS .</span>
-                            This website is fully dynamic that it is helful for the hotel/manager teams
-                            to easily handle the hotel booking tasks
-                        </span>
-                        <div>
-                            <button className='ProjectButtons' style={{ color: '#08f49296' }}>Demo</button>
-                            <button className='ProjectButtons' style={{ color: '#08f49296' }}>Code</button>
+            <div className='MultipleProjects'>
+                <div className='Allprojects'>
+                    <span className='ProjectsHeading' style={{ color: 'Orange', margin: '10px' }}>YouTube CommentGuardian</span>
+                    <div className='Projects'>
+                        <div className='projectImages'>
+                            <img src={project1} ></img>
+                        </div>
+                        <div className='ProjectDesc'>
+                            <div>
+                                <button className='ProjectButtons' style={{ color: 'Orange' }}><a href='https://www.youtube.com/watch?v=zYEwI9loBR4' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Demo</a></button>
+                                <button className='ProjectButtons' style={{ color: 'Orange' }}><a href='https://github.com/Gurdl/Youtube-Comment-Guardian' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Code</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-            <div className='Allprojects'>
-                <span className='ProjectsHeading' style={{ color: 'skyblue' }}>Blog Website</span>
-                <div className='Projects' >
-                    <div className='projectImages'>
-                        <img src={blogs} ></img>
-                    </div>
-                    <div className='ProjectDesc'>
-                        <span style={darkMode ? { color: 'black' } : { color: '' }}>It is a blog-website where users can posts blogs. I used</span>
-                        <span className='tech' style={{ color: 'var(--gray' }}>: React,Node.js,Express.js, MongoDb and CSS3</span> to make this blog website.
-                        This website is the Example of Full-Stack-MERN-Web applications
-                        <div>
-                            <button className='ProjectButtons' style={{ color: 'skyblue' }}>Demo</button>
-                            <button className='ProjectButtons' style={{ color: 'skyblue' }}>Code</button>
+                <div className='Allprojects'>
+                    <span className='ProjectsHeading' style={{ color: 'black', margin: '10px' }}>Enhance-Gpt with Voice </span>
+                    <div className='Projects' >
+                        <div className='projectImages'>
+                            <img src={project2} ></img>
+                        </div>
+                        <div className='ProjectDesc'>
+                            <div>
+                                <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://www.youtube.com/watch?v=7bS3od3Znec' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Demo</a></button>
+                                <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://github.com/Gurdl/Enhance-Gpt' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Code</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div className='Allprojects'>
+                    <span className='ProjectsHeading' style={{ color: 'black', margin: '10px' }}>Dall-E-Clone </span>
+                    <div className='Projects' >
+                        <div className='projectImages'>
+                            <img src={project3} ></img>
+                        </div>
+                        <div className='ProjectDesc'>
+                            <div>
+                                <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://www.youtube.com/watch?v=YRS3jB61n-8' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Demo</a></button>
+                                <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://github.com/Gurdl/DALL.E-Clone' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='Allprojects'>
+                    <span className='ProjectsHeading' style={{ color: 'black', margin: '10px' }}>SQl-Generator </span>
+                    <div className='Projects' >
+                        <div className='projectImages'>
+                            <img src={project4} ></img>
+                        </div>
+                        <div className='ProjectDesc'>
+                            <div>
+                                <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://www.youtube.com/watch?v=f2Dtysg4K7M' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Demo</a></button>
+                                <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://github.com/Gurdl/SQL-Generator' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='Allprojects'>
+                    <span className='ProjectsHeading' style={{ color: 'black', margin: '10px' }}>Apple-Vision-Pro Clone </span>
+                    <div className='Projects' >
+                        <div className='projectImages'>
+                            <img src={project5} ></img>
+                        </div>
+                        <div className='ProjectDesc'>
+                            <div>
+                            <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://apple-vision-pro-gurdevsingh.netlify.app/' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Live</a></button>
+                                <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://www.youtube.com/watch?v=XUJZrvH1NiU' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Demo</a></button>
+                                <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://github.com/Gurdl/Apple-Vision-Pro' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='Allprojects'>
+                    <span className='ProjectsHeading' style={{ color: 'black', margin: '10px' }}>Blog-App </span>
+                    <div className='Projects' >
+                        <div className='projectImages'>
+                            <img src={project6} ></img>
+                        </div>
+                        <div className='ProjectDesc'>
+                            <div>
+                            <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='  https://my-blogs-website.netlify.app/' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Live</a></button>
+                                <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://www.youtube.com/watch?v=q7ONckMJtxU' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Demo</a></button>
+                                <button className='ProjectButtons' style={{ color: '#08f49296' }}><a href='https://github.com/Gurdl/MERN-Blog-App' target="_blank" style={{ color: 'Orange', textDecoration: 'none' }}>Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
             </div>
+
+
 
         </div>
     )

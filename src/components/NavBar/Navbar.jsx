@@ -26,7 +26,7 @@ function Navbar() {
                     <li><Link spy={true} smooth={true} to={'Testimonials'}>
                        TESTIMONIAL
                     </Link></li>
-                    <button type='button' className='button nav-button'><Link spy={true} smooth={true} to={'contacts'}>Contact Us</Link></button>
+                    <button type='button' className='button nav-button'><Link spy={true} smooth={true} to={'contacts'}>Contact Me</Link></button>
                 </ul>
 
             </div>

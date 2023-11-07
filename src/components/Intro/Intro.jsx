@@ -32,7 +32,7 @@ function Intro() {
                     <div>made multiple projects to gain some practical experience.
                     </div>
                 </div>
-                <Link spy={true} smooth={true} to={'contacts'}><button type='button' className='button intro-button'>Contact Us</button></Link>
+                <Link spy={true} smooth={true} to={'contacts'}><button type='button' className='button intro-button'>Contact Me</button></Link>
                 <div className='intro-socaialicons'>
                     <a href="https://github.com/Gurdl?tab=repositories" target="_blank"><img src={github} alt="" className='socailIconImage'></img></a>
                     <a href="https://www.linkedin.com/in/gurdevsingh12/" target="_blank"><img src={linkedin} alt="" className='socailIconImage'></img></a>
